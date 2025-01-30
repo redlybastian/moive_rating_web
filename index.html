@@ -7,17 +7,21 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div>
-      <input type="text" id="search_input" /><br /><br />
-      <button type="submit" onclick="search()">Search</button>
-    </div>
-    <br />
-    <div>
-      <br />
-      <h2 id="movie_title"></h2>
-    </div>
-    <div>
-      <img src="" alt="image" id="moviePoster" />
+    <div class="container">
+        <h1>Welcome to Movie Magic</h1>
+        
+            <input id="search_input" type="text" name="q" placeholder="Search for a movie...">
+            <button onclick="search()"" type="submit">🎬</button>
+ 
+        <div class="movie-container">
+            <img src="/" alt="Movie Poster" id="moviePoster">
+            <div class="info">
+                <span>Movie name <h2 id="movie_title"></h2></span>
+                <span>Movie year <p id="movie_year"></p></span>
+                <span>Movie rating   <p id="rating"></p></span>
+                <span>Movie plot <p id="plot"></p></span>               
+            </div>
+        </div>
     </div>
 
     <script src="script.js"></script>
